@@ -1,0 +1,85 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Strategii SEO Esențiale pentru 2024",
+      "slug": "strategii-seo-esentiale-2024",
+      "excerpt": "Descoperă cele mai eficiente strategii SEO care vor ajuta afacerea ta să exceleze în peisajul digital din 2024.",
+      "heroImage": "/blog/seo-strategies.webp",
+      "thumbnailImage": "/blog/seo-strategies-thumb.webp",
+      "date": "2024-01-15",
+      "lastModified": "2024-01-15",
+      "categories": ["SEO", "Marketing Digital"],
+      "tags": ["SEO", "Digital Marketing", "Content Marketing", "Google Updates", "Core Web Vitals"],
+      "author": {
+        "name": "Maria Popescu",
+        "avatar": "/authors/maria.jpg",
+        "bio": "Expert SEO cu peste 8 ani de experiență în marketing digital",
+        "role": "SEO Manager",
+        "social": {
+          "linkedin": "https://linkedin.com/in/maria-popescu",
+          "twitter": "https://twitter.com/mariapopescu"
+        }
+      },
+      "content": {
+        "intro": "<p>Peisajul digital este într-o continuă evoluție, iar pentru a rămâne în topul rezultatelor în căutările organice trebuie să te adaptezi noilor tendințe și tehnologii. În acest articol, vom explora strategiile esențiale care vor defini succesul în SEO în 2024.</p>",
+        "sections": [
+          {
+            "id": "optimizare-ai",
+            "title": "Optimizare de Conținut cu AI",
+            "content": "<p>Odată cu dezvoltarea instrumentelor AI, optimizarea conținutului a devenit mai sofisticată. Inteligența artificială ne ajută să:</p><ul><li>Analizăm intenția de căutare mai eficient</li><li>Generăm conținut relevant și optimizat</li><li>Identificăm oportunități noi de keywords</li></ul>",
+            "image": "/blog/sections/ai-content.webp",
+            "imageAlt": "AI Content Optimization Tools"
+          },
+          {
+            "id": "cautare-vocala",
+            "title": "Optimizare pentru Căutare Vocală",
+            "content": "<p>Cu creșterea adopției asistenților vocali, optimizarea pentru căutarea vocală devine crucială:</p><ul><li>Focusare pe întrebări și fraze conversaționale</li><li>Optimizare pentru răspunsuri scurte și concise</li><li>Implementare de scheme structurate pentru featured snippets</li></ul>",
+            "image": "/blog/sections/voice-search.webp",
+            "imageAlt": "Voice Search Optimization",
+            "callout": {
+              "type": "tip",
+              "title": "Pro Tip",
+              "content": "Folosește întrebări frecvente în titlurile secțiunilor pentru a optimiza conținutul pentru căutarea vocală."
+            }
+          },
+          {
+            "id": "core-web-vitals",
+            "title": "Core Web Vitals",
+            "content": "<p>Google pune tot mai mult accent pe experiența utilizatorului:</p><ul><li>Optimizarea vitezei de încărcare</li><li>Îmbunătățirea interactivității paginilor</li><li>Reducerea instabilității vizuale</li></ul>",
+            "image": "/blog/sections/core-web-vitals.webp",
+            "imageAlt": "Core Web Vitals Metrics",
+            "codeExample": {
+              "language": "javascript",
+              "title": "Măsurarea LCP (Largest Contentful Paint)",
+              "code": "new PerformanceObserver((entryList) => {\n  for (const entry of entryList.getEntries()) {\n    console.log('LCP:', entry.startTime);\n  }\n}).observe({entryTypes: ['largest-contentful-paint']});"
+            }
+          }
+        ],
+        "conclusion": {
+          "title": "Concluzie",
+          "content": "<p>Pentru a rămâne competitiv în 2024, este esențial să implementezi aceste strategii SEO și să monitorizezi constant performanța site-ului tău. Focusează-te pe experiența utilizatorului și crearea de conținut de calitate optimizat atât pentru utilizatori, cât și pentru motoarele de căutare.</p>"
+        },
+        "resources": [
+          {
+            "title": "Google Search Central",
+            "url": "https://developers.google.com/search",
+            "description": "Documentație oficială Google pentru optimizare SEO"
+          },
+          {
+            "title": "Web.dev",
+            "url": "https://web.dev",
+            "description": "Ghiduri și instrumente pentru optimizarea performanței web"
+          }
+        ]
+      },
+      "meta": {
+        "readingTime": "8 minute",
+        "difficulty": "Intermediar",
+        "toolsRequired": ["Google Search Console", "Google Analytics 4", "Screaming Frog"],
+        "featured": true,
+        "status": "published"
+      }
+    }
+  ]
+}

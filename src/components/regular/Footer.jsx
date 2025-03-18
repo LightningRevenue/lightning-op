@@ -2,7 +2,8 @@ import React from 'react';
 import { 
   FaFacebook, FaInstagram, FaLinkedin, FaTwitter, 
   FaGoogle, FaMicrosoft, FaAmazon, FaDatabase, 
-  FaHubspot, FaStripe, FaComments, FaRocket
+  FaHubspot, FaStripe, FaComments, FaRocket,
+  FaSign
 } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
@@ -105,6 +106,12 @@ const Footer = () => {
                   <Link to="/finantare-startup" className="flex items-center gap-2 text-gray-500 hover:text-primary transition-colors font-medium">
                     <FaRocket className="text-sm text-primary" />
                     <span>Toate Programele de Finanțare</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/inscriere-startup-finantare" className="text-gray-500 hover:text-primary transition-colors font-medium flex items-center gap-2"> 
+                    <FaSign className="text-sm text-primary" />
+                    <span>Înscrie-ți Startup-ul</span>
                   </Link>
                 </li>
                 <li>

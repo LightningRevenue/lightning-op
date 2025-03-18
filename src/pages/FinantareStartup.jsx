@@ -400,7 +400,7 @@ const FinantareStartup = () => {
                   Programează o consultație gratuită și află ce programe ți se potrivesc
                 </p>
                 <Link 
-                  to="/contact"
+                  to="/inscriere-startup-finantare"
                   className="inline-flex items-center px-8 py-4 text-lg font-medium text-white bg-primary rounded-xl hover:bg-primary/90 transition-colors duration-300"
                 >
                   Contactează-ne pentru Detalii
