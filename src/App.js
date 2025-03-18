@@ -1,12 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import ScrollToTop from './components/regular/ScrollToTop';
 import CookieConsent from './components/regular/CookieConsent';
 import './App.css';
 
-// Import pages
+// Lazy load blog components
+const Blog = lazy(() => import('./pages/Blog'));
+const BlogPostPage = lazy(() => import('./blog-pages/BlogPostPage'));
+
+// Import other pages...
 import Home from './pages/Home';
-import Blog from './pages/Blog';
 import DespreNoi from './pages/DespreNoi';
 import Servicii from './pages/Servicii';
 import DezvoltareWeb from './pages/DezvoltareWeb';
@@ -33,15 +36,25 @@ import HubSpotStartups from './pages/HubSpotStartups';
 import IntercomStartups from './pages/IntercomStartups';
 import StripeStartups from './pages/StripeStartups';
 import FinantareStartup from './pages/FinantareStartup';
+import StartupFinantareForm from './pages/StartupFinantareForm';
+
+// Loading component
+const Loading = () => (
+  <div className="flex items-center justify-center min-h-screen">
+    <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
+  </div>
+);
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <ScrollToTop />
+    <BrowserRouter>
+      <ScrollToTop />
+      <Suspense fallback={<Loading />}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog" element={<Blog />}>
+            <Route path=":slug" element={<BlogPostPage />} />
+          </Route>
           <Route path="/despre-noi" element={<DespreNoi />} />
           <Route path="/servicii" element={<Servicii />} />
           <Route path="/dezvoltare-web" element={<DezvoltareWeb />} />
@@ -67,11 +80,12 @@ function App() {
           <Route path="/intercom-startups" element={<IntercomStartups />} />
           <Route path="/stripe-startups" element={<StripeStartups />} />
           <Route path="/finantare-startup" element={<FinantareStartup />} />
+          <Route path="/inscriere-startup-finantare" element={<StartupFinantareForm />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <CookieConsent />
-      </BrowserRouter>
-    </>
+      </Suspense>
+      <CookieConsent />
+    </BrowserRouter>
   );
 }
 
