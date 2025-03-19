@@ -1,0 +1,51 @@
+{
+  "name": "Lightning-Revenue | Agenție Marketing Digital & Dezvoltare Web",
+  "short_name": "Lightning-Revenue",
+  "description": "Servicii premium de marketing digital, dezvoltare web și SEO în România. Creștem afaceri online prin strategii personalizate.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0066CC",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "categories": ["business", "marketing", "web development", "seo"],
+  "screenshots": [
+    {
+      "src": "/screenshots/home.png",
+      "sizes": "1280x720",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Servicii",
+      "url": "/servicii",
+      "description": "Vezi serviciile noastre"
+    },
+    {
+      "name": "Contact",
+      "url": "/#contact",
+      "description": "Contactează-ne"
+    }
+  ]
+}

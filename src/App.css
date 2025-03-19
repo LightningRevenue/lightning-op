@@ -1,0 +1,89 @@
+/* Stiluri globale pentru landing page */
+.App {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Pentru un smooth scroll când se face click pe linkurile de navigare */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Eliminăm stilurile implicite pentru App-header */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Blog Typography */
+.prose {
+  @apply text-gray-600;
+}
+
+.prose h2 {
+  @apply text-2xl font-bold text-gray-900 mb-4 mt-8;
+}
+
+.prose h3 {
+  @apply text-xl font-bold text-gray-900 mb-3 mt-6;
+}
+
+.prose p {
+  @apply mb-4;
+}
+
+.prose a {
+  @apply text-primary hover:text-primary/80 transition-colors;
+}
+
+.prose ul {
+  @apply list-disc list-inside mb-4;
+}
+
+.prose ol {
+  @apply list-decimal list-inside mb-4;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-primary pl-4 italic my-4;
+}
+
+.prose code {
+  @apply bg-gray-100 rounded px-1 py-0.5 text-sm;
+}
+
+.prose pre {
+  @apply bg-gray-900 text-white rounded-lg p-4 my-4 overflow-x-auto;
+}
+
+/* Blog Card hover effects */
+.blog-card:hover .blog-card-image {
+  @apply transform scale-105;
+}
+
+/* Blog loading placeholder animation */
+@keyframes shimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.placeholder-shimmer {
+  animation: shimmer 1s linear infinite forwards;
+  background: linear-gradient(to right, #f6f7f8 8%, #edeef1 18%, #f6f7f8 33%);
+  background-size: 1000px 100%;
+}
