@@ -31,10 +31,8 @@ import StripeStartups from './pages/StripeStartups';
 import FinantareStartup from './pages/FinantareStartup';
 import StartupFinantareForm from './pages/StartupFinantareForm';
 import './App.css';
-
-// Lazy loaded components
-const Blog = lazy(() => import('./pages/Blog'));
-const BlogPostPage = lazy(() => import('./blog-pages/BlogPostPage'));
+import Blog from './pages/Blog';
+import BlogPostPage from './blog-pages/BlogPostPage';
 
 // Loading component
 const Loading = () => (
