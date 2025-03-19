@@ -5,27 +5,27 @@ const Rezultate = () => {
   const rezultate = [
     {
       id: 1,
-      cifra: "50+",
+      cifra: "200+",
       text: "Proiecte Finalizate",
-      descriere: "Pentru afaceri locale"
+      descriere: "În ultimii 5 ani"
     },
     {
       id: 2,
-      cifra: "25%",
-      text: "Creștere Conversii",
-      descriere: "În medie pentru clienții noștri"
+      cifra: "150%",
+      text: "Creștere Medie",
+      descriere: "Trafic organic în 6 luni"
     },
     {
       id: 3,
-      cifra: "15+",
+      cifra: "98%",
       text: "Clienți Mulțumiți",
-      descriere: "Colaborări de lungă durată"
+      descriere: "Satisfacție confirmată"
     },
     {
       id: 4,
-      cifra: "2x",
-      text: "Trafic Organic",
-      descriere: "Creștere în 6 luni"
+      cifra: "3.5x",
+      text: "ROI Mediu",
+      descriere: "Return on Investment"
     }
   ];
 

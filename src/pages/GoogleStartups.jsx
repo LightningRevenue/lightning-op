@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 import { 
   FaGoogle, FaRocket, FaLightbulb, FaCloud, 
   FaUsers, FaCheckCircle, FaCode, FaDatabase,
@@ -13,6 +14,26 @@ import Header from '../components/regular/Header';
 import Footer from '../components/regular/Footer';
 
 const GoogleStartups = () => {
+  const [dynamicTitle, setDynamicTitle] = useState('');
+  const location = useLocation();
+
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const searchTerm = searchParams.get('q')?.toLowerCase() || '';
+    
+    if (searchTerm.includes('gemini') || searchTerm.includes('ai')) {
+      setDynamicTitle('Google AI și Gemini pentru Startup-uri | Google for Startups');
+    } else if (searchTerm.includes('cloud') || searchTerm.includes('gcp')) {
+      setDynamicTitle('Google Cloud pentru Startup-uri | $100,000 Credite Gratuite');
+    } else if (searchTerm.includes('workspace') || searchTerm.includes('gmail')) {
+      setDynamicTitle('Google Workspace Business Plus pentru Startup-uri | 50 Licențe');
+    } else if (searchTerm.includes('firebase') || searchTerm.includes('app')) {
+      setDynamicTitle('Firebase și App Development | Google for Startups România');
+    } else {
+      setDynamicTitle('Google for Startups România | Program Oficial de Finanțare');
+    }
+  }, [location.search]);
+
   const benefits = [
     {
       icon: <FaCloud />,
@@ -282,7 +303,12 @@ const GoogleStartups = () => {
 
   return (
     <>
-      <SEO {...seoData} />
+      <SEO 
+        title={dynamicTitle}
+        description="Accelerează-ți startup-ul cu Google Cloud, Gemini AI și Google Workspace. Primești până la $100,000 în credite cloud și 50 de licențe business. Program oficial Google for Startups în România."
+        keywords="Google for Startups România, Google Cloud credits, Gemini AI, startup program, cloud computing"
+        canonical="https://www.lightning-revenue.ro/google-startups"
+      />
       <SchemaOrg {...schemaData} />
       <Header />
       

@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { 
   FaGoogle, FaMicrosoft, FaAmazon, FaDatabase,
   FaHubspot, FaStripe, FaComments, FaRocket,
@@ -13,6 +13,31 @@ import Footer from '../components/regular/Footer';
 import EligibilityCheck from '../components/regular/EligibilityCheck';
 
 const FinantareStartup = () => {
+  const [dynamicTitle, setDynamicTitle] = useState('');
+  const location = useLocation();
+
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const searchTerm = searchParams.get('q') || '';
+    
+    // Dynamic title based on search terms
+    if (searchTerm.includes('google') || searchTerm.includes('cloud')) {
+      setDynamicTitle('Credite Google Cloud pentru Startup-uri | Până la $100,000');
+    } else if (searchTerm.includes('microsoft') || searchTerm.includes('azure')) {
+      setDynamicTitle('Microsoft for Startups | Credite Azure și GitHub Enterprise');
+    } else if (searchTerm.includes('aws') || searchTerm.includes('amazon')) {
+      setDynamicTitle('AWS Activate | Credite Amazon Web Services pentru Startup-uri');
+    } else if (searchTerm.includes('hubspot') || searchTerm.includes('crm')) {
+      setDynamicTitle('HubSpot for Startups | 90% Reducere CRM și Marketing Tools');
+    } else if (searchTerm.includes('stripe') || searchTerm.includes('plati')) {
+      setDynamicTitle('Stripe for Startups | Procesare Plăți Gratuită până la $50,000');
+    } else if (searchTerm.includes('intercom') || searchTerm.includes('suport')) {
+      setDynamicTitle('Intercom for Startups | 95% Reducere Platformă Suport Clienți');
+    } else {
+      setDynamicTitle('Finanțare și Credite pentru Startup-uri Tech | Lightning Revenue');
+    }
+  }, [location.search]);
+
   const cloudPrograms = [
     {
       icon: <FaGoogle />,
@@ -144,7 +169,7 @@ const FinantareStartup = () => {
   return (
     <>
       <SEO 
-        title="Finanțare și Credite pentru Startup-uri Tech | Lightning Revenue"
+        title={dynamicTitle}
         description="Accelerează-ți startup-ul cu peste $400,000 în credite cloud și beneficii enterprise. Acces la Google Cloud, Microsoft Azure, AWS și tool-uri esențiale pentru scalare."
         keywords="finantare startup, cloud credits, startup funding, Google Cloud, Microsoft Azure, AWS, MongoDB, HubSpot, Stripe, Intercom"
         canonical="https://www.lightning-revenue.ro/finantare-startup"

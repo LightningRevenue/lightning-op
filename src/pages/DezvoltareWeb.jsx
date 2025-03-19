@@ -92,20 +92,20 @@ const DezvoltareWeb = () => {
     {
       icon: <FaClock />,
       title: "Timp de Încărcare Rapid",
-      value: "Sub 2 secunde",
-      description: "Optimizare pentru viteza de încărcare și performanță"
+      value: "< 2s",
+      description: "Optimizare pentru viteza de încărcare"
     },
     {
       icon: <FaMoneyBillWave />,
       title: "Rata de Conversie",
       value: "+150%",
-      description: "Creștere medie a ratei de conversie"
+      description: "Creștere medie după optimizare"
     },
     {
       icon: <FaStar />,
       title: "Satisfacție Clienți",
       value: "98%",
-      description: "Nivel de satisfacție a clienților"
+      description: "Feedback pozitiv confirmat"
     }
   ];
 

@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 import { 
   FaMicrosoft, FaCloud, FaServer, FaDatabase,
   FaUsers, FaCheckCircle, FaCode, FaLock,
@@ -13,6 +14,26 @@ import Header from '../components/regular/Header';
 import Footer from '../components/regular/Footer';
 
 const MicrosoftStartups = () => {
+  const [dynamicTitle, setDynamicTitle] = useState('');
+  const location = useLocation();
+
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const searchTerm = searchParams.get('q')?.toLowerCase() || '';
+    
+    if (searchTerm.includes('azure') || searchTerm.includes('cloud')) {
+      setDynamicTitle('Credite Azure pentru Startup-uri | Până la $150,000 Gratuiți');
+    } else if (searchTerm.includes('github') || searchTerm.includes('devops')) {
+      setDynamicTitle('GitHub Enterprise pentru Startup-uri | Microsoft Startup Program');
+    } else if (searchTerm.includes('m365') || searchTerm.includes('office')) {
+      setDynamicTitle('Microsoft 365 Business pentru Startup-uri | Microsoft for Startups');
+    } else if (searchTerm.includes('ai') || searchTerm.includes('machine learning')) {
+      setDynamicTitle('Azure AI și ML pentru Startup-uri | Microsoft for Startups');
+    } else {
+      setDynamicTitle('Microsoft for Startups România | Program Oficial de Finanțare');
+    }
+  }, [location.search]);
+
   const benefits = [
     {
       icon: <FaCloud />,
@@ -257,7 +278,12 @@ const MicrosoftStartups = () => {
 
   return (
     <>
-      <SEO {...seoData} />
+      <SEO 
+        title={dynamicTitle}
+        description="Accelerează-ți startup-ul cu resurse Microsoft în valoare de până la $150,000. Acces la Azure, GitHub Enterprise, Microsoft 365 și suport tehnic dedicat. Program oficial Microsoft for Startups în România."
+        keywords="Microsoft for Startups România, Azure credits, GitHub Enterprise, startup program, cloud computing"
+        canonical="https://www.lightning-revenue.ro/microsoft-startups"
+      />
       <SchemaOrg {...schemaData} />
       <Header />
       

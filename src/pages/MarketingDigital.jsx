@@ -106,21 +106,21 @@ const MarketingDigital = () => {
   const metrics = [
     {
       icon: <FaChartLine />,
-      title: "Creștere Conversii",
-      value: "+180%",
-      description: "Creștere medie a ratei de conversie"
+      title: "Creștere Trafic",
+      value: "+150%",
+      description: "În primele 6 luni"
     },
     {
       icon: <FaMoneyBillWave />,
       title: "ROAS",
-      value: "4.5x",
+      value: "3.5x",
       description: "Return on Ad Spend mediu"
     },
     {
       icon: <FaStar />,
-      title: "Client Satisfaction",
-      value: "96%",
-      description: "Rată de retenție clienți"
+      title: "Satisfacție Clienți",
+      value: "98%",
+      description: "Feedback pozitiv confirmat"
     }
   ];
 

@@ -92,8 +92,8 @@ const OptimizareSEO = () => {
     {
       icon: <FaChartLine />,
       title: "Creștere Trafic Organic",
-      value: "+285%",
-      description: "Creștere medie a traficului în 6 luni"
+      value: "+150%",
+      description: "Creștere medie în 6 luni"
     },
     {
       icon: <FaMoneyBillWave />,

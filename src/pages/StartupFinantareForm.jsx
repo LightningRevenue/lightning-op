@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 import { FaCheck, FaLightbulb, FaClock, FaRocket, FaQuestionCircle } from 'react-icons/fa';
 import Header from '../components/regular/Header';
 import Footer from '../components/regular/Footer';
@@ -8,6 +9,30 @@ import SEO from '../components/seo/SEO';
 import SchemaOrg from '../components/seo/SchemaOrg';
 
 const StartupFinantareForm = () => {
+  const [dynamicTitle, setDynamicTitle] = useState('');
+  const location = useLocation();
+
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const searchTerm = searchParams.get('q') || '';
+    const utmSource = searchParams.get('utm_source') || '';
+    
+    // Dynamic title based on search terms and UTM source
+    if (utmSource === 'google') {
+      setDynamicTitle('Aplică pentru Credite Google Cloud | Până la $100,000 Gratuiți');
+    } else if (utmSource === 'microsoft') {
+      setDynamicTitle('Aplică pentru Microsoft for Startups | $150,000 Azure Credits');
+    } else if (utmSource === 'aws') {
+      setDynamicTitle('Aplică pentru AWS Activate | $120,000 Credite Cloud');
+    } else if (searchTerm.includes('finantare') || searchTerm.includes('startup')) {
+      setDynamicTitle('Aplică pentru Finanțare Startup | Până la $400,000 în Beneficii');
+    } else if (searchTerm.includes('cloud') || searchTerm.includes('infrastructura')) {
+      setDynamicTitle('Finanțare Cloud pentru Startup-uri | Credite și Beneficii Enterprise');
+    } else {
+      setDynamicTitle('Formular Finanțare Startup | Lightning Revenue');
+    }
+  }, [location.search]);
+
   const applicationSteps = [
     {
       icon: <FaCheck />,
@@ -53,7 +78,7 @@ const StartupFinantareForm = () => {
   return (
     <>
       <SEO 
-        title="Formular Finanțare Startup | Lightning Revenue"
+        title={dynamicTitle}
         description="Aplică pentru programul nostru de finanțare startup. Obține acces la credite cloud, tool-uri enterprise și suport tehnic pentru accelerarea afacerii tale."
         keywords="aplicatie finantare startup, formular startup, finantare tech startup, credite cloud startup"
         canonical="https://www.lightning-revenue.ro/startup-finantare-form"

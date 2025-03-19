@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 import { 
   FaAmazon, FaCloud, FaServer, FaDatabase,
   FaUsers, FaCheckCircle, FaCode, FaLock,
@@ -13,6 +14,26 @@ import Header from '../components/regular/Header';
 import Footer from '../components/regular/Footer';
 
 const AmazonStartups = () => {
+  const [dynamicTitle, setDynamicTitle] = useState('');
+  const location = useLocation();
+
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const searchTerm = searchParams.get('q')?.toLowerCase() || '';
+    
+    if (searchTerm.includes('aws') || searchTerm.includes('amazon cloud')) {
+      setDynamicTitle('AWS Activate pentru Startup-uri | $120,000 Credite Cloud');
+    } else if (searchTerm.includes('aws lambda') || searchTerm.includes('serverless')) {
+      setDynamicTitle('AWS Serverless pentru Startup-uri | Lambda și API Gateway');
+    } else if (searchTerm.includes('s3') || searchTerm.includes('storage')) {
+      setDynamicTitle('Amazon S3 și Storage pentru Startup-uri | AWS Activate');
+    } else if (searchTerm.includes('ec2') || searchTerm.includes('compute')) {
+      setDynamicTitle('Amazon EC2 pentru Startup-uri | Compute Resources');
+    } else {
+      setDynamicTitle('AWS Activate România | Program Oficial de Finanțare');
+    }
+  }, [location.search]);
+
   const benefits = [
     {
       icon: <FaCloud />,
@@ -234,7 +255,12 @@ const AmazonStartups = () => {
 
   return (
     <>
-      <SEO {...seoData} />
+      <SEO 
+        title={dynamicTitle}
+        description="Accelerează-ți startup-ul cu infrastructură AWS în valoare de până la $120,000. Acces la EC2, S3, Lambda și suport tehnic business. Program oficial AWS Activate în România."
+        keywords="AWS Activate România, AWS credits, startup program, cloud computing, Amazon Web Services"
+        canonical="https://www.lightning-revenue.ro/amazon-startups"
+      />
       <SchemaOrg {...schemaData} />
       <Header />
       

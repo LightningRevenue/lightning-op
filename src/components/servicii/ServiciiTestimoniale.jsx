@@ -16,33 +16,33 @@ const ServiciiTestimoniale = () => {
       nume: "Alexandru Popescu",
       pozitie: "CEO",
       companie: "Tech Solutions SRL",
-      text: "Colaborarea cu Lightning Operational pentru dezvoltarea platformei noastre e-commerce a fost o decizie excelentă. Vânzările online au crescut cu 200% în primele 6 luni.",
+      text: "Dezvoltarea platformei noastre e-commerce cu Lightning Operational a fost o decizie strategică excelentă. Performanța site-ului și experiența utilizatorilor s-au îmbunătățit semnificativ.",
       imagine: "/testimoniale/alexandru-p.jpg",
       rating: 5,
       categorie: "Dezvoltare Web",
-      rezultate: ["Creștere vânzări: 200%", "Conversie: +45%", "Bounce rate: -30%"]
+      rezultate: ["Viteză: < 2s", "Conversii: +150%", "Uptime: 99.9%"]
     },
     {
       id: 2,
       nume: "Maria Ionescu",
       pozitie: "Marketing Manager",
       companie: "Fashion Boutique",
-      text: "Strategia SEO implementată de echipa Lightning a adus rezultate remarcabile. Traficul organic a crescut cu 150%, iar pozițiile în Google s-au îmbunătățit semnificativ.",
+      text: "Strategia SEO implementată de echipa Lightning a adus rezultate remarcabile. Traficul organic și pozițiile în Google s-au îmbunătățit conform targetelor stabilite.",
       imagine: "/testimoniale/maria-i.jpg",
       rating: 5,
       categorie: "SEO",
-      rezultate: ["Trafic organic: +150%", "Poziții #1-3: 45 keywords", "Leads: +80%"]
+      rezultate: ["Trafic: +150%", "Top 3: 80% keywords", "ROI: 3.5x"]
     },
     {
       id: 3,
       nume: "Cristian Dumitrescu",
       pozitie: "Director Marketing",
       companie: "Restaurant Trattoria",
-      text: "Campaniile de marketing digital au transformat complet prezența noastră online. ROI-ul a depășit toate așteptările, iar baza de clienți continuă să crească.",
+      text: "Campaniile de marketing digital au transformat complet prezența noastră online. ROI-ul a depășit așteptările, iar baza de clienți continuă să crească.",
       imagine: "/testimoniale/cristian-d.jpg",
       rating: 5,
       categorie: "Marketing Digital",
-      rezultate: ["ROAS: 450%", "CPL redus cu 40%", "Conversii: +120%"]
+      rezultate: ["ROAS: 3.5x", "CPL: -40%", "Conversii: +150%"]
     },
     {
       id: 4,
@@ -53,7 +53,7 @@ const ServiciiTestimoniale = () => {
       imagine: "/testimoniale/elena-r.jpg",
       rating: 5,
       categorie: "Social Media",
-      rezultate: ["Followers: +200%", "Engagement: +180%", "Reach: +300%"]
+      rezultate: ["Reach: +150%", "Engagement: +120%", "ROI: 3.5x"]
     }
   ];
 

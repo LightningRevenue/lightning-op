@@ -27,6 +27,29 @@ const DespreNoi = () => {
     }
   ];
 
+  const rezultate = [
+    {
+      cifra: "+150%",
+      text: "Creștere Trafic",
+      descriere: "În primele 6 luni"
+    },
+    {
+      cifra: "98%",
+      text: "Clienți Mulțumiți",
+      descriere: "Feedback pozitiv"
+    },
+    {
+      cifra: "3.5x",
+      text: "ROI Mediu",
+      descriere: "Return on Investment"
+    },
+    {
+      cifra: "200+",
+      text: "Proiecte Finalizate",
+      descriere: "În ultimii 5 ani"
+    }
+  ];
+
   return (
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4">
@@ -58,22 +81,13 @@ const DespreNoi = () => {
                 </div>
 
                 <div className="grid grid-cols-2 gap-8">
-                  <div>
-                    <span className="block text-5xl font-bold text-gray-900 mb-2">100+</span>
-                    <span className="text-gray-600">Clienți mulțumiți</span>
-                  </div>
-                  <div>
-                    <span className="block text-5xl font-bold text-gray-900 mb-2">200+</span>
-                    <span className="text-gray-600">Proiecte finalizate</span>
-                  </div>
-                  <div>
-                    <span className="block text-5xl font-bold text-gray-900 mb-2">5+</span>
-                    <span className="text-gray-600">Ani de experiență</span>
-                  </div>
-                  <div>
-                    <span className="block text-5xl font-bold text-gray-900 mb-2">15+</span>
-                    <span className="text-gray-600">Experți dedicați</span>
-                  </div>
+                  {rezultate.map((rezultat, index) => (
+                    <div key={index}>
+                      <span className="block text-5xl font-bold text-gray-900 mb-2">{rezultat.cifra}</span>
+                      <span className="text-gray-600">{rezultat.text}</span>
+                      <p className="text-sm text-gray-600">{rezultat.descriere}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
             </motion.div>

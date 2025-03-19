@@ -7,7 +7,6 @@ import DiscountPopup from '../components/regular/DiscountPopup';
 import ServiciiHero from '../components/servicii/ServiciiHero';
 import ServiciiLista from '../components/servicii/ServiciiLista';
 import ServiciiProces from '../components/servicii/ServiciiProces';
-import ServiciiTestimoniale from '../components/servicii/ServiciiTestimoniale';
 import Contact from '../components/home/Contact';
 
 const Servicii = () => {
@@ -27,7 +26,6 @@ const Servicii = () => {
         <ServiciiHero />
         <ServiciiLista />
         <ServiciiProces />
-        <ServiciiTestimoniale />
         <Contact />
       </main>
       
