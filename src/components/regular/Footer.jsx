@@ -238,7 +238,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex flex-wrap justify-center gap-6">
-                <Link to="/termeni-conditii" className="text-gray-500 hover:text-primary transition-colors text-sm">
+                <Link to="/termeni-si-conditii" className="text-gray-500 hover:text-primary transition-colors text-sm">
                   Termeni și Condiții
                 </Link>
                 <Link to="/politica-confidentialitate" className="text-gray-500 hover:text-primary transition-colors text-sm">

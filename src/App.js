@@ -33,6 +33,9 @@ import StartupFinantareForm from './pages/StartupFinantareForm';
 import './App.css';
 import Blog from './pages/Blog';
 import BlogPostPage from './blog-pages/BlogPostPage';
+import CookiePolicy from './pages/CookiePolicy';
+import TermeniSiConditii from './pages/TermeniSiConditii';
+import PoliticaConfidentialitate from './pages/PoliticaConfidentialitate';
 
 // Loading component
 const Loading = () => (
@@ -77,6 +80,9 @@ function App() {
           <Route path="/stripe-startups" element={<StripeStartups />} />
           <Route path="/finantare-startup" element={<FinantareStartup />} />
           <Route path="/inscriere-startup-finantare" element={<StartupFinantareForm />} />
+          <Route path="/politica-cookie" element={<CookiePolicy />} />
+          <Route path="/termeni-si-conditii" element={<TermeniSiConditii />} />
+          <Route path="/politica-confidentialitate" element={<PoliticaConfidentialitate />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
