@@ -1,35 +1,27 @@
 User-agent: *
 Allow: /
+
+# Private areas
 Disallow: /admin/
 Disallow: /dashboard/
 Disallow: /crm/
+Disallow: /*?*
 
 # Sitemap
 Sitemap: https://www.lightning-revenue.com/sitemap.xml
 
-# Optimizări pentru crawling
-Crawl-delay: 10
-
-# Excluderi specifice
-Disallow: /admin/
-Disallow: /*?*
-Disallow: /*?
-Disallow: /*&
-Disallow: /*.pdf$
-Disallow: /wp-admin/
-Disallow: /wp-includes/
-Disallow: /search/
-Disallow: /tag/
-Disallow: /category/
-
-# Allow important files and directories
-Allow: /sitemap.xml
-Allow: /favicon.ico
-Allow: /robots.txt
-Allow: /assets/
+# Resource handling
 Allow: /*.js
 Allow: /*.css
 Allow: /*.png
 Allow: /*.jpg
+Allow: /*.webp
 Allow: /*.gif
 Allow: /*.svg
+Allow: /assets/
+Allow: /blog-images/
+Allow: /images/
+Allow: /images-blog-posts/
+
+# Crawl efficiency
+Crawl-delay: 5
