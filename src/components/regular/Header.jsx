@@ -94,145 +94,147 @@ const Header = () => {
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
 
-        <nav className={`fixed md:relative top-0 right-0 h-screen md:h-auto w-[70%] md:w-auto bg-white md:bg-transparent transform ${menuOpen ? 'translate-x-0 shadow-xl' : 'translate-x-full'} md:translate-x-0 transition-transform duration-300 ease-in-out md:flex items-center z-40 p-8 md:p-0`}>
+        <nav className={`fixed md:relative top-0 right-0 h-screen md:h-auto w-[70%] md:w-auto bg-white md:bg-transparent transform ${menuOpen ? 'translate-x-0 shadow-xl' : 'translate-x-full'} md:translate-x-0 transition-transform duration-300 ease-in-out md:flex items-start md:items-center z-40 overflow-y-auto md:overflow-visible`}>
           {/* Add mobile close button */}
-          <button 
-            className="md:hidden absolute top-4 right-4 text-dark text-2xl focus:outline-none" 
-            onClick={() => setMenuOpen(false)}
-          >
-            <FaTimes />
-          </button>
-          <ul className="flex flex-col md:flex-row md:items-center space-y-6 md:space-y-0 md:space-x-8">
-            <li>
-              <Link to="/" className="text-dark hover:text-primary font-medium transition-colors">
-                Acasă
-              </Link>
-            </li>
-            <li>
-              <Link to="/despre-noi" className="text-dark hover:text-primary font-medium transition-colors">
-                Despre Noi
-              </Link>
-            </li>
-            
-            {/* Services Dropdown */}
-            <li className="relative group">
-              <div 
-                className="flex items-center gap-1 cursor-pointer"
-                onClick={() => setServicesOpen(!servicesOpen)}
-              >
+          <div className="min-h-screen md:min-h-0 p-8 md:p-0">
+            <button 
+              className="md:hidden absolute top-4 right-4 text-dark text-2xl focus:outline-none" 
+              onClick={() => setMenuOpen(false)}
+            >
+              <FaTimes />
+            </button>
+            <ul className="flex flex-col md:flex-row md:items-center space-y-6 md:space-y-0 md:space-x-8">
+              <li>
+                <Link to="/" className="text-dark hover:text-primary font-medium transition-colors">
+                  Acasă
+                </Link>
+              </li>
+              <li>
+                <Link to="/despre-noi" className="text-dark hover:text-primary font-medium transition-colors">
+                  Despre Noi
+                </Link>
+              </li>
+              
+              {/* Services Dropdown */}
+              <li className="relative group">
+                <div 
+                  className="flex items-center gap-1 cursor-pointer"
+                  onClick={() => setServicesOpen(!servicesOpen)}
+                >
+                  <Link 
+                    to="/servicii" 
+                    className="text-dark hover:text-primary font-medium transition-colors"
+                  >
+                    Servicii
+                  </Link>
+                  <FaChevronDown className={`transform transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`} />
+                </div>
+
+                {/* Desktop Dropdown */}
+                <div className="hidden md:flex absolute top-full left-1/2 -translate-x-1/2 opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-white rounded-xl shadow-lg py-4 mt-2 transition-all duration-200">
+                  {services.map((section, index) => (
+                    <div key={section.title} className={`min-w-[220px] ${index > 0 ? 'border-l border-gray-100' : ''}`}>
+                      <h3 className="px-4 py-2 text-sm font-semibold text-gray-400 uppercase tracking-wider">
+                        {section.title}
+                      </h3>
+                      <div className="py-2">
+                        {section.items.map((item) => (
+                          <Link
+                            key={item.path}
+                            to={item.path}
+                            className="flex items-start gap-3 px-4 py-2 text-gray-800 hover:bg-gray-50 hover:text-primary transition-colors group"
+                          >
+                            <div className="flex-shrink-0 mt-1">
+                              {item.icon}
+                            </div>
+                            <div>
+                              <div className="font-medium">{item.name}</div>
+                              {item.description && (
+                                <div className="text-xs text-gray-500 mt-0.5">{item.description}</div>
+                              )}
+                            </div>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Mobile Dropdown */}
+                <div className={`md:hidden ${servicesOpen ? 'block' : 'hidden'} pl-4 mt-2 space-y-4`}>
+                  {services.map((section) => (
+                    <div key={section.title}>
+                      <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-2">
+                        {section.title}
+                      </h3>
+                      <div className="space-y-2">
+                        {section.items.map((item) => (
+                          <Link
+                            key={item.path}
+                            to={item.path}
+                            className="flex items-start gap-2 text-gray-800 hover:text-primary transition-colors py-1"
+                            onClick={() => {
+                              setServicesOpen(false);
+                              setMenuOpen(false);
+                            }}
+                          >
+                            {item.icon && <span className="mt-1">{item.icon}</span>}
+                            <div>
+                              <div>{item.name}</div>
+                              {item.description && (
+                                <div className="text-xs text-gray-500">{item.description}</div>
+                              )}
+                            </div>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </li>
+
+              <li>
+                <Link to="/portofoliu" className="text-dark hover:text-primary font-medium transition-colors">
+                  Portofoliu
+                </Link>
+              </li>
+              <li>
                 <Link 
-                  to="/servicii" 
+                  to="/blog" 
                   className="text-dark hover:text-primary font-medium transition-colors"
                 >
-                  Servicii
+                  Blog
                 </Link>
-                <FaChevronDown className={`transform transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`} />
-              </div>
-
-              {/* Desktop Dropdown */}
-              <div className="hidden md:flex absolute top-full left-1/2 -translate-x-1/2 opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-white rounded-xl shadow-lg py-4 mt-2 transition-all duration-200">
-                {services.map((section, index) => (
-                  <div key={section.title} className={`min-w-[220px] ${index > 0 ? 'border-l border-gray-100' : ''}`}>
-                    <h3 className="px-4 py-2 text-sm font-semibold text-gray-400 uppercase tracking-wider">
-                      {section.title}
-                    </h3>
-                    <div className="py-2">
-                      {section.items.map((item) => (
-                        <Link
-                          key={item.path}
-                          to={item.path}
-                          className="flex items-start gap-3 px-4 py-2 text-gray-800 hover:bg-gray-50 hover:text-primary transition-colors group"
-                        >
-                          <div className="flex-shrink-0 mt-1">
-                            {item.icon}
-                          </div>
-                          <div>
-                            <div className="font-medium">{item.name}</div>
-                            {item.description && (
-                              <div className="text-xs text-gray-500 mt-0.5">{item.description}</div>
-                            )}
-                          </div>
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Mobile Dropdown */}
-              <div className={`md:hidden ${servicesOpen ? 'block' : 'hidden'} pl-4 mt-2 space-y-4`}>
-                {services.map((section) => (
-                  <div key={section.title}>
-                    <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-2">
-                      {section.title}
-                    </h3>
-                    <div className="space-y-2">
-                      {section.items.map((item) => (
-                        <Link
-                          key={item.path}
-                          to={item.path}
-                          className="flex items-start gap-2 text-gray-800 hover:text-primary transition-colors py-1"
-                          onClick={() => {
-                            setServicesOpen(false);
-                            setMenuOpen(false);
-                          }}
-                        >
-                          {item.icon && <span className="mt-1">{item.icon}</span>}
-                          <div>
-                            <div>{item.name}</div>
-                            {item.description && (
-                              <div className="text-xs text-gray-500">{item.description}</div>
-                            )}
-                          </div>
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </li>
-
-            <li>
-              <Link to="/portofoliu" className="text-dark hover:text-primary font-medium transition-colors">
-                Portofoliu
-              </Link>
-            </li>
-            <li>
-              <Link 
-                to="/blog" 
-                className="text-dark hover:text-primary font-medium transition-colors"
-              >
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/crm-waitlist"
-                className="inline-flex items-center gap-1.5 text-sm px-4 py-1.5 bg-gradient-to-r from-primary to-blue-600 text-white rounded-full hover:opacity-90 transition-colors"
-              >
-                <FaRocket className="text-xs" />
-                CRM Waitlist
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/ebook-digitalizare"
-                className="inline-flex items-center gap-1.5 text-sm px-4 py-1.5 text-primary hover:text-primary/80 font-medium transition-colors"
-              >
-                <FaBook className="text-xs" />
-                Ghid Gratuit
-              </Link>
-            </li>
-            
-            <li>
-              <a 
-                href="/programari" 
-                className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors"
-              >
-                Contactează-ne
-              </a>
-            </li>
-          </ul>
+              </li>
+              <li>
+                <Link
+                  to="/crm-waitlist"
+                  className="inline-flex items-center gap-1.5 text-sm px-4 py-1.5 bg-gradient-to-r from-primary to-blue-600 text-white rounded-full hover:opacity-90 transition-colors"
+                >
+                  <FaRocket className="text-xs" />
+                  CRM Waitlist
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/ebook-digitalizare"
+                  className="inline-flex items-center gap-1.5 text-sm px-4 py-1.5 text-primary hover:text-primary/80 font-medium transition-colors"
+                >
+                  <FaBook className="text-xs" />
+                  Ghid Gratuit
+                </Link>
+              </li>
+              
+              <li>
+                <a 
+                  href="/programari" 
+                  className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors"
+                >
+                  Contactează-ne
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
