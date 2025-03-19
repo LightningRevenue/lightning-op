@@ -29,7 +29,9 @@ const BlogSchema = ({ post }) => {
         name: 'LightningRevenue',
         logo: {
           '@type': 'ImageObject',
-          url: 'https://www.lightning-revenue.com/logo.png'
+          url: 'https://www.lightning-revenue.com/favicon.ico',
+          width: '48',
+          height: '48'
         }
       },
       mainEntityOfPage: {

@@ -10,13 +10,19 @@ const SchemaOrg = ({ type, name, description }) => {
     };
 
     // Add additional fields for AboutPage
-    if (type === 'AboutPage') {
-      schema.mainEntity = {
+    if (type === 'AboutPage' || type === 'Organization') {
+      const orgData = {
         '@type': 'Organization',
         name: 'LightningRevenue',
         description: description,
         foundingDate: '2024',
         url: 'https://www.lightningrevenue.ro',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://www.lightningrevenue.ro/favicon.ico',
+          width: '48',
+          height: '48'
+        },
         sameAs: [
           'https://facebook.com/lightningrevenue',
           'https://instagram.com/lightningrevenue',
@@ -29,23 +35,10 @@ const SchemaOrg = ({ type, name, description }) => {
           contactType: 'customer service',
           areaServed: 'RO',
           availableLanguage: ['Romanian', 'English']
-        },
-        address: {
-          '@type': 'PostalAddress',
-          streetAddress: 'Str. Libertății nr. 10',
-          addressLocality: 'București',
-          addressCountry: 'RO'
-        },
-        serviceArea: {
-          '@type': 'GeoCircle',
-          geoMidpoint: {
-            '@type': 'GeoCoordinates',
-            latitude: '44.4268',
-            longitude: '26.1025'
-          },
-          geoRadius: '50000'
         }
       };
+
+      schema.mainEntity = type === 'AboutPage' ? orgData : { ...schema, ...orgData };
     }
 
     // Add fields for JobPosting
