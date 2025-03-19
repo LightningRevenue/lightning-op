@@ -178,12 +178,22 @@
   </url>
   <url>
     <loc>https://www.lightning-revenue.com/blog/importanta-infrastructurii-cloud-pentru-startupuri</loc>
-    <lastmod>2024-03-19</lastmod>
+    <lastmod>2025-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://www.lightning-revenue.com/images-blog-posts/cloud-blod-1/cloud-services-image.webp</image:loc>
       <image:title>Cloud Infrastructure for Startups</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.lightning-revenue.com/blog/ghid-complet-marketing-analytics-2025</loc>
+    <lastmod>2025-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://www.lightning-revenue.com/blog-images/marketing-analytics-2025.webp</image:loc>
+      <image:title>Marketing și Analytics în 2025</image:title>
     </image:image>
   </url>
 
