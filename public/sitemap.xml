@@ -169,13 +169,22 @@
     <priority>0.8</priority>
   </url>
 
-<!-- Blog Posts -->
-        <url>
+  <!-- Blog Posts -->
+  <url>
     <loc>https://www.lightning-revenue.com/blog/strategii-seo-esentiale-2025</loc>
     <lastmod>2025-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-    
+  </url>
+  <url>
+    <loc>https://www.lightning-revenue.com/blog/importanta-infrastructurii-cloud-pentru-startupuri</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://www.lightning-revenue.com/images-blog-posts/cloud-blod-1/cloud-services-image.webp</image:loc>
+      <image:title>Cloud Infrastructure for Startups</image:title>
+    </image:image>
   </url>
 
 </urlset>
