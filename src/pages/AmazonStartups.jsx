@@ -258,7 +258,7 @@ const AmazonStartups = () => {
       <SEO 
         title={dynamicTitle}
         description="Accelerează-ți startup-ul cu infrastructură AWS în valoare de până la $120,000. Acces la EC2, S3, Lambda și suport tehnic business. Program oficial AWS Activate în România."
-        keywords="AWS Activate România, AWS credits, startup program, cloud computing, Amazon Web Services"
+        keywords="AWS Activate România, AWS credits, startup program, cloud computing, Amazon Web Services, finanțare startup tech, credite cloud AWS, program startup România, $120000 credite cloud, AWS pentru antreprenori, tech startup, fonduri startup, accelerator AWS, Amazon SageMaker, Lambda serverless, EC2 compute, S3 storage, DynamoDB, startup finanțare, AWS Bedrock, AWS pentru firme noi, incubator startup tech"
         canonical="https://www.lightning-revenue.ro/amazon-startups"
       />
       <SchemaOrg {...schemaData} />

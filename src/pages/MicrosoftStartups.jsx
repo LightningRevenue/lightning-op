@@ -281,7 +281,7 @@ const MicrosoftStartups = () => {
       <SEO 
         title={dynamicTitle}
         description="Accelerează-ți startup-ul cu resurse Microsoft în valoare de până la $150,000. Acces la Azure, GitHub Enterprise, Microsoft 365 și suport tehnic dedicat. Program oficial Microsoft for Startups în România."
-        keywords="Microsoft for Startups România, Azure credits, GitHub Enterprise, startup program, cloud computing"
+        keywords="Microsoft for Startups România, Azure credits, GitHub Enterprise, startup program, cloud computing, Microsoft pentru antreprenori, Azure pentru startup, fonduri startup tech, M365 Business Premium, $150000 credite Azure, GitHub Copilot, finanțare startup, accelerator tehnologic, program inovație, startup cloud România, Azure DevOps, Microsoft AI startup, cloud pentru firme noi, Microsoft 365 Business, Azure Machine Learning"
         canonical="https://www.lightning-revenue.ro/microsoft-startups"
       />
       <SchemaOrg {...schemaData} />
