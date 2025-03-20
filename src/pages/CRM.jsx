@@ -47,7 +47,7 @@ const CRM = () => {
   const fetchLeads = async () => {
     try {
       const auth = localStorage.getItem('dashboardAuth');
-      const response = await fetch('http://localhost:5000/api/contact/submissions', {
+      const response = await fetch('https://backend-logic-lght-849100326888.europe-west1.run.app/api/contact/submissions', {
         headers: {
           'Authorization': `Basic ${auth}`
         }
@@ -67,7 +67,7 @@ const CRM = () => {
   const fetchAnalytics = async () => {
     try {
       const auth = localStorage.getItem('dashboardAuth');
-      const response = await fetch('http://localhost:5000/api/crm/analytics', {
+      const response = await fetch('https://backend-logic-lght-849100326888.europe-west1.run.app/api/crm/analytics', {
         headers: {
           'Authorization': `Basic ${auth}`
         }
@@ -89,7 +89,7 @@ const CRM = () => {
       }
       
       const auth = localStorage.getItem('dashboardAuth');
-      const response = await fetch('http://localhost:5000/api/crm/send-email', {
+      const response = await fetch('https://backend-logic-lght-849100326888.europe-west1.run.app/api/crm/send-email', {
         method: 'POST',
         headers: {
           'Authorization': `Basic ${auth}`,
@@ -122,7 +122,7 @@ const CRM = () => {
   const handleAddNote = async (leadId, content) => {
     try {
       const auth = localStorage.getItem('dashboardAuth');
-      const response = await fetch(`http://localhost:5000/api/crm/notes/${leadId}`, {
+      const response = await fetch(`https://backend-logic-lght-849100326888.europe-west1.run.app/api/crm/notes/${leadId}`, {
         method: 'POST',
         headers: {
           'Authorization': `Basic ${auth}`,
@@ -145,7 +145,7 @@ const CRM = () => {
   const handleUpdateStatus = async (leadId, status) => {
     try {
       const auth = localStorage.getItem('dashboardAuth');
-      const response = await fetch(`http://localhost:5000/api/crm/status/${leadId}`, {
+      const response = await fetch(`https://backend-logic-lght-849100326888.europe-west1.run.app/api/crm/status/${leadId}`, {
         method: 'PATCH',
         headers: {
           'Authorization': `Basic ${auth}`,

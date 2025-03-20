@@ -37,6 +37,7 @@ import BlogPostPage from './blog-pages/BlogPostPage';
 import CookiePolicy from './pages/CookiePolicy';
 import TermeniSiConditii from './pages/TermeniSiConditii';
 import PoliticaConfidentialitate from './pages/PoliticaConfidentialitate';
+import SendGridDashboard from './pages/SendGridDashboard';
 
 // Loading component
 const Loading = () => (
@@ -85,6 +86,7 @@ function App() {
           <Route path="/politica-cookie" element={<CookiePolicy />} />
           <Route path="/termeni-si-conditii" element={<TermeniSiConditii />} />
           <Route path="/politica-confidentialitate" element={<PoliticaConfidentialitate />} />
+          <Route path="/dashboard/email" element={<SendGridDashboard />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/404" element={<NotFound />} />
         </Routes>

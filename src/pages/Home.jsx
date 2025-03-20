@@ -25,7 +25,7 @@ const Home = () => {
   // Function to track user interactions
   const trackEvent = async (event, section, additionalData = {}) => {
     try {
-      const response = await fetch('http://localhost:5000/api/track', {
+      const response = await fetch('https://backend-logic-lght-849100326888.europe-west1.run.app/api/track', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

@@ -12,7 +12,7 @@ const Inbox = ({ onClose }) => {
     e.preventDefault();
     try {
       const auth = localStorage.getItem('dashboardAuth');
-      const response = await fetch('http://localhost:5000/api/crm/send-general-email', {
+      const response = await fetch('https://backend-logic-lght-849100326888.europe-west1.run.app/api/crm/send-general-email', {
         method: 'POST',
         headers: {
           'Authorization': `Basic ${auth}`,

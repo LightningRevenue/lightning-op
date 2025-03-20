@@ -44,7 +44,7 @@ const Waitlist = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/waitlist/sales-intelligence', {
+      const response = await fetch('https://backend-logic-lght-849100326888.europe-west1.run.app/api/waitlist/sales-intelligence', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

@@ -29,7 +29,7 @@ const CRMWaitlist = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/waitlist/crm', {
+      const response = await fetch('https://backend-logic-lght-849100326888.europe-west1.run.app/api/waitlist/crm', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

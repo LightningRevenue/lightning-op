@@ -234,7 +234,7 @@ const SearchConsoleAnalytics = () => {
             console.log(`Fetching data from ${formattedStartDate} to ${formattedEndDate}`);
             
             const response = await fetch(
-                `http://localhost:5000/api/analytics/search-analytics?startDate=${formattedStartDate}&endDate=${formattedEndDate}`,
+                `https://backend-logic-lght-849100326888.europe-west1.run.app/api/analytics/search-analytics?startDate=${formattedStartDate}&endDate=${formattedEndDate}`,
                 {
                     headers: {
                         'Authorization': `Basic ${auth}`
@@ -276,7 +276,7 @@ const SearchConsoleAnalytics = () => {
     const handleReconnect = async () => {
         try {
             const auth = localStorage.getItem('dashboardAuth');
-            const response = await fetch('http://localhost:5000/api/analytics/google/auth', {
+            const response = await fetch('https://backend-logic-lght-849100326888.europe-west1.run.app/api/analytics/google/auth', {
                 headers: {
                     'Authorization': `Basic ${auth}`
                 }
@@ -294,7 +294,7 @@ const SearchConsoleAnalytics = () => {
     const handleLogout = async () => {
         try {
             const auth = localStorage.getItem('dashboardAuth');
-            const response = await fetch('http://localhost:5000/api/analytics/google/logout', {
+            const response = await fetch('https://backend-logic-lght-849100326888.europe-west1.run.app/api/analytics/google/logout', {
                 method: 'POST',
                 headers: {
                     'Authorization': `Basic ${auth}`

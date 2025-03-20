@@ -39,7 +39,7 @@ const Dashboard = () => {
   const fetchAnalytics = async () => {
     try {
       const auth = localStorage.getItem('dashboardAuth');
-      const response = await fetch('http://localhost:5000/api/analytics', {
+      const response = await fetch('https://backend-logic-lght-849100326888.europe-west1.run.app/api/analytics', {
         headers: {
           'Authorization': `Basic ${auth}`
         }
@@ -68,16 +68,16 @@ const Dashboard = () => {
       
       switch (activeView) {
         case 'contact':
-          endpoint = `http://localhost:5000/api/contact/submissions?page=${page}&type=${filter}`;
+          endpoint = `https://backend-logic-lght-849100326888.europe-west1.run.app/api/contact/submissions?page=${page}&type=${filter}`;
           break;
         case 'ebook':
-          endpoint = `http://localhost:5000/api/waitlist/ebook?page=${page}`;
+          endpoint = `https://backend-logic-lght-849100326888.europe-west1.run.app/api/waitlist/ebook?page=${page}`;
           break;
         case 'crm':
-          endpoint = `http://localhost:5000/api/waitlist/crm?page=${page}&status=${filter}`;
+          endpoint = `https://backend-logic-lght-849100326888.europe-west1.run.app/api/waitlist/crm?page=${page}&status=${filter}`;
           break;
         case 'sales':
-          endpoint = `http://localhost:5000/api/waitlist/sales-intelligence?page=${page}&status=${filter}`;
+          endpoint = `https://backend-logic-lght-849100326888.europe-west1.run.app/api/waitlist/sales-intelligence?page=${page}&status=${filter}`;
           break;
       }
 
@@ -328,7 +328,7 @@ const Dashboard = () => {
     
     try {
       const base64Credentials = btoa(`${credentials.username}:${credentials.password}`);
-      const response = await fetch('http://localhost:5000/api/contact/submissions', {
+      const response = await fetch('https://backend-logic-lght-849100326888.europe-west1.run.app/api/contact/submissions', {
         headers: {
           'Authorization': `Basic ${base64Credentials}`
         }
@@ -352,10 +352,10 @@ const Dashboard = () => {
       
       switch (activeView) {
         case 'crm':
-          endpoint = `http://localhost:5000/api/waitlist/crm/${id}/status`;
+          endpoint = `https://backend-logic-lght-849100326888.europe-west1.run.app/api/waitlist/crm/${id}/status`;
           break;
         case 'sales':
-          endpoint = `http://localhost:5000/api/waitlist/sales-intelligence/${id}/status`;
+          endpoint = `https://backend-logic-lght-849100326888.europe-west1.run.app/api/waitlist/sales-intelligence/${id}/status`;
           break;
         default:
           return;
