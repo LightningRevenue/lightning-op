@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Header from '../components/regular/Header';
 import Footer from '../components/regular/Footer';
+import SearchConsoleAnalytics from '../components/crm/analytics/SearchConsoleAnalytics';
 import { FaFilter, FaAngleLeft, FaAngleRight, FaBook, FaClock, FaChartLine, FaEnvelope, FaInfoCircle, FaUserCheck, FaBullseye, FaUsers, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 const Dashboard = () => {
@@ -633,6 +634,10 @@ const Dashboard = () => {
             </div>
 
             {renderAnalytics()}
+            
+            <div className="mb-8">
+              <SearchConsoleAnalytics />
+            </div>
 
             <div className="bg-white rounded-xl shadow-sm">
               <div 
