@@ -7,21 +7,21 @@ const Testimoniale = () => {
       id: 1,
       nume: "Alexandru Popescu",
       companie: "Tech Solutions SRL",
-      text: "Colaborarea cu Lightning Operational a fost o decizie excepțională pentru afacerea noastră. În doar 6 luni, traficul organic a crescut cu 150%, iar rata de conversie s-a îmbunătățit semnificativ.",
+      text: "Colaborarea cu Lightning Revenue a fost o decizie excepțională pentru afacerea noastră. În doar 6 luni, traficul organic a crescut cu 150%, iar rata de conversie s-a îmbunătățit semnificativ.",
       rating: 5
     },
     {
       id: 2,
       nume: "Maria Ionescu",
       companie: "Fashion Boutique",
-      text: "Am ales Lightning Operational pentru prezența noastră online și ROI-ul a fost de 3.5x. Strategia lor integrată de marketing digital și SEO a adus rezultate concrete și măsurabile.",
+      text: "Am ales Lightning Revenue pentru prezența noastră online și ROI-ul a fost de 3.5x. Strategia lor integrată de marketing digital și SEO a adus rezultate concrete și măsurabile.",
       rating: 5
     },
     {
       id: 3,
       nume: "Cristian Dumitrescu",
       companie: "Restaurant Trattoria",
-      text: "Cu Lightning Operational am reușit să ne poziționăm în top 3 rezultate Google pentru 80% din cuvintele cheie țintite. Vizibilitatea crescută se reflectă direct în creșterea comenzilor online.",
+      text: "Cu Lightning Revenue am reușit să ne poziționăm în top 3 rezultate Google pentru 80% din cuvintele cheie țintite. Vizibilitatea crescută se reflectă direct în creșterea comenzilor online.",
       rating: 5
     }
   ];

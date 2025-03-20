@@ -8,13 +8,13 @@
   <!-- Main Pages -->
   <url>
     <loc>https://www.lightning-revenue.com/</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.lightning-revenue.com/despre-noi</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -22,43 +22,49 @@
   <!-- Services Pages -->
   <url>
     <loc>https://www.lightning-revenue.com/servicii</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.lightning-revenue.com/dezvoltare-web</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.lightning-revenue.com/optimizare-seo</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.lightning-revenue.com/marketing-digital</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.lightning-revenue.com/social-media</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.lightning-revenue.com/branding</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.lightning-revenue.com/hosting-security</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  </url>
+    <loc>https://www.lightning-revenue.com/ecommerce</loc>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -66,7 +72,7 @@
   <!-- Blog Section -->
   <url>
     <loc>https://www.lightning-revenue.com/blog</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -74,49 +80,49 @@
   <!-- Startup Resources -->
   <url>
     <loc>https://www.lightning-revenue.com/finantare-startup</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.lightning-revenue.com/amazon-startups</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.lightning-revenue.com/google-startups</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.lightning-revenue.com/microsoft-startups</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.lightning-revenue.com/hubspot-startups</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.lightning-revenue.com/intercom-startups</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.lightning-revenue.com/mongodb-startups</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.lightning-revenue.com/stripe-startups</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -124,25 +130,25 @@
   <!-- Other Important Pages -->
   <url>
     <loc>https://www.lightning-revenue.com/cariere</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.lightning-revenue.com/portfolio</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.lightning-revenue.com/partners</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.lightning-revenue.com/programari</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -150,21 +156,21 @@
   <!-- Legal și Contact -->
   <url>
     <loc>https://www.lightning-revenue.com/termeni-conditii</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
     <loc>https://www.lightning-revenue.com/politica-confidentialitate</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
     <loc>https://www.lightning-revenue.com/contact</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2025-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

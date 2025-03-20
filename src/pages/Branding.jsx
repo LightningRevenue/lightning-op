@@ -150,7 +150,7 @@ const Branding = () => {
         type="Service"
         name="Servicii Branding și Domain Management"
         description="Servicii complete de branding și administrare domenii pentru prezență online profesională"
-        provider="Lightning Operational"
+        provider="Lightning Revenue"
       />
       <Header />
       

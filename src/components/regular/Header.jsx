@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   FaBars, FaTimes, FaChevronDown, 
-  FaGoogle, FaMicrosoft, FaAmazon, FaCloud, FaBook, FaRocket, FaDatabase, FaHubspot, FaStripe, FaComments 
+  FaGoogle, FaMicrosoft, FaAmazon, FaCloud, FaBook, FaRocket, FaDatabase, FaHubspot, FaStripe, FaComments,
+  FaShoppingCart 
 } from 'react-icons/fa';
 
 const Header = () => {
@@ -14,6 +15,7 @@ const Header = () => {
       title: "Servicii Digitale",
       items: [
         { name: "Dezvoltare Web", path: "/dezvoltare-web" },
+        { name: "E-commerce", path: "/ecommerce" },
         { name: "Optimizare SEO", path: "/optimizare-seo" },
         { name: "Marketing Digital", path: "/marketing-digital" },
         { name: "Social Media", path: "/social-media" },

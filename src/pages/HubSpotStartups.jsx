@@ -219,7 +219,7 @@ const HubSpotStartups = () => {
         title="HubSpot for Startups România | CRM Enterprise și Marketing Automation"
         description="Accelerează-ți startup-ul cu 90% reducere la HubSpot Enterprise Suite, acces la tools avansate de marketing, sales și service, plus mentorat dedicat. Program oficial HubSpot for Startups în România."
         keywords="HubSpot for Startups România, CRM Enterprise, marketing automation, sales tools, startup program, customer service platform"
-        canonical="https://www.lightning-revenue.ro/hubspot-startups"
+        canonical="https://www.lightning-revenue.com/hubspot-startups"
       />
       <SchemaOrg 
         type="Service"

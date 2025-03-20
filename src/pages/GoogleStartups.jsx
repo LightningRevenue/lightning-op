@@ -307,7 +307,7 @@ const GoogleStartups = () => {
         title={dynamicTitle}
         description="Accelerează-ți startup-ul cu Google Cloud, Gemini AI și Google Workspace. Primești până la $100,000 în credite cloud și 50 de licențe business. Program oficial Google for Startups în România."
         keywords="Google for Startups România, Google Cloud credits, Gemini AI, startup program, cloud computing, finanțare startup, credite cloud gratuite, program startup România, Google Workspace Business Plus, $100000 credite, Google pentru antreprenori, tech startup, fonduri startup, accelerator de afaceri, Google Cloud pentru firme noi, Google Business startup, fonduri seed, incubator startup, program inovație, startup tech România"
-        canonical="https://www.lightning-revenue.ro/google-startups"
+        canonical="https://www.lightning-revenue.com/google-startups"
       />
       <SchemaOrg {...schemaData} />
       <Header />

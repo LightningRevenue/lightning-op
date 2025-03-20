@@ -81,7 +81,7 @@ const StartupFinantareForm = () => {
         title={dynamicTitle}
         description="Aplică pentru programul nostru de finanțare startup. Obține acces la credite cloud, tool-uri enterprise și suport tehnic pentru accelerarea afacerii tale."
         keywords="aplicatie finantare startup, formular startup, finantare tech startup, credite cloud startup"
-        canonical="https://www.lightning-revenue.ro/startup-finantare-form"
+        canonical="https://www.lightning-revenue.com/startup-finantare-form"
       />
       <SchemaOrg 
         type="WebPage"

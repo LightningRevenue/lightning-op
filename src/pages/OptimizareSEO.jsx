@@ -136,7 +136,7 @@ const OptimizareSEO = () => {
         type="Service"
         name="Servicii Optimizare SEO"
         description="Servicii profesionale de optimizare SEO și strategii de creștere vizibilitate online"
-        provider="Lightning Operational"
+        provider="Lightning Revenue"
       />
       <Header />
       

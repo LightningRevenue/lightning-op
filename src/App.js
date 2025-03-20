@@ -30,6 +30,7 @@ import IntercomStartups from './pages/IntercomStartups';
 import StripeStartups from './pages/StripeStartups';
 import FinantareStartup from './pages/FinantareStartup';
 import StartupFinantareForm from './pages/StartupFinantareForm';
+import Ecommerce from './pages/Ecommerce';
 import './App.css';
 import Blog from './pages/Blog';
 import BlogPostPage from './blog-pages/BlogPostPage';
@@ -62,6 +63,7 @@ function App() {
           <Route path="/social-media" element={<SocialMedia />} />
           <Route path="/branding" element={<Branding />} />
           <Route path="/hosting-security" element={<HostingSecurity />} />
+          <Route path="/ecommerce" element={<Ecommerce />} />
           <Route path="/cariere" element={<Cariere />} />
           <Route path="/programari" element={<Booking />} />
           <Route path="/portofoliu" element={<Portfolio />} />
@@ -84,6 +86,7 @@ function App() {
           <Route path="/termeni-si-conditii" element={<TermeniSiConditii />} />
           <Route path="/politica-confidentialitate" element={<PoliticaConfidentialitate />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/404" element={<NotFound />} />
         </Routes>
       </Suspense>
       <CookieConsent />

@@ -127,7 +127,7 @@ const DezvoltareWeb = () => {
   return (
     <>
       <SEO 
-        title="Servicii Dezvoltare Web Professional | Lightning Operational"
+        title="Servicii Dezvoltare Web Professional | Lightning Revenue"
         description="Expert în dezvoltare web și creare site-uri. Oferim soluții web personalizate, optimizate SEO și performante pentru afacerea ta. Consultație gratuită!"
         keywords="dezvoltare web, creare site, web design, programare web, dezvoltare aplicatii web, site responsive, site wordpress, site prezentare, landing page, magazin online, e-commerce"
         canonical="https://www.lightningoperational.ro/dezvoltare-web"
@@ -136,7 +136,7 @@ const DezvoltareWeb = () => {
         type="Service"
         name="Servicii Dezvoltare Web"
         description="Servicii profesionale de dezvoltare web și creare site-uri pentru afaceri"
-        provider="Lightning Operational"
+        provider="Lightning Revenue"
       />
       <Header />
       

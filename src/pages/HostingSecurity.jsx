@@ -150,7 +150,7 @@ const HostingSecurity = () => {
         type="Service"
         name="Servicii Hosting & Security"
         description="Soluții profesionale de hosting administrat și securitate pentru mediul enterprise"
-        provider="Lightning Operational"
+        provider="Lightning Revenue"
       />
       <Header />
       

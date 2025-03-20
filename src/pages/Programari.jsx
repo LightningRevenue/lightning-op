@@ -94,7 +94,7 @@ const Programari = () => {
         title="Programează o Consultație | LightningRevenue"
         description="Programează o consultație gratuită cu experții noștri în marketing digital și dezvoltare web. Află cum putem ajuta afacerea ta să crească online."
         keywords="consultație marketing digital, programare întâlnire, consultanță SEO, audit digital gratuit"
-        canonical="https://www.lightning-revenue.ro/programari"
+        canonical="https://www.lightning-revenue.com/programari"
       />
       <SchemaOrg 
         type="Service"

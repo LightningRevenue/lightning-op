@@ -16,7 +16,7 @@ const ServiciiTestimoniale = () => {
       nume: "Alexandru Popescu",
       pozitie: "CEO",
       companie: "Tech Solutions SRL",
-      text: "Dezvoltarea platformei noastre e-commerce cu Lightning Operational a fost o decizie strategică excelentă. Performanța site-ului și experiența utilizatorilor s-au îmbunătățit semnificativ.",
+      text: "Dezvoltarea platformei noastre e-commerce cu Lightning Revenue a fost o decizie strategică excelentă. Performanța site-ului și experiența utilizatorilor s-au îmbunătățit semnificativ.",
       imagine: "/testimoniale/alexandru-p.jpg",
       rating: 5,
       categorie: "Dezvoltare Web",

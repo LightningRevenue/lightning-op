@@ -219,7 +219,7 @@ const IntercomStartups = () => {
         title="Intercom for Startups România | Suport Clienți și Engagement"
         description="Accelerează-ți startup-ul cu 95% reducere la platforma Intercom, acces la funcționalități premium de suport clienți, chatboți și automatizări. Program oficial Intercom for Startups în România."
         keywords="Intercom for Startups România, customer support, chat automation, startup program, customer engagement, chatbots"
-        canonical="https://www.lightning-revenue.ro/intercom-startups"
+        canonical="https://www.lightning-revenue.com/intercom-startups"
       />
       <SchemaOrg 
         type="Service"

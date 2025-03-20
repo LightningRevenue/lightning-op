@@ -172,7 +172,7 @@ const FinantareStartup = () => {
         title={dynamicTitle}
         description="Accelerează-ți startup-ul cu peste $400,000 în credite cloud și beneficii enterprise. Acces la Google Cloud, Microsoft Azure, AWS și tool-uri esențiale pentru scalare."
         keywords="finantare startup, cloud credits, startup funding, Google Cloud, Microsoft Azure, AWS, MongoDB, HubSpot, Stripe, Intercom"
-        canonical="https://www.lightning-revenue.ro/finantare-startup"
+        canonical="https://www.lightning-revenue.com/finantare-startup"
       />
       <SchemaOrg 
         type="Service"
@@ -181,7 +181,7 @@ const FinantareStartup = () => {
         provider={{
           "@type": "Organization",
           "name": "Lightning Revenue",
-          "sameAs": "https://www.lightning-revenue.ro"
+          "sameAs": "https://www.lightning-revenue.com"
         }}
         areaServed={{
           "@type": "Country",

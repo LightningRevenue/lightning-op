@@ -244,7 +244,7 @@ const StripeStartups = () => {
         title="Stripe for Startups România | Procesare Plăți și Billing pentru Startup-uri"
         description="Accelerează-ți startup-ul cu $50,000 volum de procesare gratuit, acces la toate produsele Stripe, și suport dedicat pentru implementare. Program oficial Stripe for Startups în România."
         keywords="Stripe for Startups România, payment processing, billing software, startup program, online payments"
-        canonical="https://www.lightning-revenue.ro/stripe-startups"
+        canonical="https://www.lightning-revenue.com/stripe-startups"
       />
       <SchemaOrg 
         type="Service"

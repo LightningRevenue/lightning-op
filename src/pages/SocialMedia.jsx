@@ -156,7 +156,7 @@ const SocialMedia = () => {
         type="Service"
         name="Servicii Social Media Marketing"
         description="Servicii profesionale de social media marketing și management pentru prezență online puternică"
-        provider="Lightning Operational"
+        provider="Lightning Revenue"
       />
       <Header />
       

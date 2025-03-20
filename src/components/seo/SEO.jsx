@@ -9,7 +9,7 @@ const SEO = ({
   canonical,
   type = 'website'
 }) => {
-  const siteName = 'Lightning Operational';
+  const siteName = 'Lightning Revenue';
   const formattedTitle = `${title} | ${siteName}`;
 
   return (

@@ -151,7 +151,7 @@ const MarketingDigital = () => {
         type="Service"
         name="Servicii Marketing Digital"
         description="Servicii profesionale de marketing digital și campanii PPC pentru creșterea vânzărilor online"
-        provider="Lightning Operational"
+        provider="Lightning Revenue"
       />
       <Header />
       
