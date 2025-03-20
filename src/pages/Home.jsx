@@ -13,6 +13,7 @@ import Expertiza from '../components/home/Expertiza';
 import Rezultate from '../components/home/Rezultate';
 import RecentBlogPosts from '../components/home/RecentBlogPosts';
 import Contact from '../components/home/Contact';
+import StartupPanel from '../components/home/StartupPanel';
 
 const Home = () => {
 
@@ -138,6 +139,7 @@ const Home = () => {
       <Header />
       
       <main>
+        <StartupPanel />
         <Hero onView={trackSectionView('hero')} trackEvent={trackEvent} />
         <DespreNoi onView={trackSectionView('despre-noi')} trackEvent={trackEvent} />
         <Avantaje onView={trackSectionView('avantaje')} trackEvent={trackEvent} />
