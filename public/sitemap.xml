@@ -175,6 +175,18 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Special Offers -->
+  <url>
+    <loc>https://www.lightning-revenue.com/oferta-limitata</loc>
+    <lastmod>2025-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.lightning-revenue.com/images-offer/Oferta-Website.jpg</image:loc>
+      <image:title>Ofertă Limitată Website</image:title>
+    </image:image>
+  </url>
+
   <!-- Blog Posts -->
   <url>
     <loc>https://www.lightning-revenue.com/blog/strategii-seo-esentiale-2025</loc>
@@ -200,6 +212,46 @@
     <image:image>
       <image:loc>https://www.lightning-revenue.com/blog-images/marketing-analytics-2025.webp</image:loc>
       <image:title>Marketing și Analytics în 2025</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.lightning-revenue.com/blog/ghid-complet-ecommerce-2025</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://www.lightning-revenue.com/blog-images/ghid-ecommerce-2025.jpg</image:loc>
+      <image:title>Ghid Complet eCommerce 2025</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.lightning-revenue.com/blog/website-pentru-afaceri-2025</loc>
+    <lastmod>2025-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://www.lightning-revenue.com/blog-images/website-business-2025.jpg</image:loc>
+      <image:title>Website pentru Afaceri în 2025</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.lightning-revenue.com/blog/tendinte-seo-2025</loc>
+    <lastmod>2025-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://www.lightning-revenue.com/blog-images/seo-trends-image-2025.png</image:loc>
+      <image:title>Tendințe SEO 2025</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.lightning-revenue.com/blog/servicii-marketing-digital-2025</loc>
+    <lastmod>2025-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://www.lightning-revenue.com/blog-images/marketing-services-image.jpg</image:loc>
+      <image:title>Servicii Marketing Digital 2025</image:title>
     </image:image>
   </url>
 

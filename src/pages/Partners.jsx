@@ -143,7 +143,7 @@ const Partners = () => {
         title="Parteneri și Integrări Enterprise | LightningRevenue - Soluții Complete de Transformare Digitală"
         description="Explorează ecosistemul nostru complet de parteneri și integrări tehnologice enterprise. Oferim soluții validate pentru cloud computing, marketing automation, securitate și transformare digitală."
         keywords="integrări software, parteneri tehnologici, cloud computing, marketing automation, CRM, ERP, API integration, business solutions, transformare digitală, soluții enterprise"
-        canonical="https://www.lightningoperational.ro/partners"
+        canonical="https://www.lightning-revenue.com/partners"
       />
       <SchemaOrg 
         type="Organization"

@@ -237,7 +237,7 @@ const AmazonStartups = () => {
   const seoData = {
     title: "AWS for Startups | Program de finanțare pentru startup-uri",
     description: "Dezvoltă-ți startup-ul cu AWS. Obține credite cloud, suport tehnic și acces la servicii premium pentru scalarea afacerii tale.",
-    canonical: "https://lightning-revenue.com/amazon-startups",
+    canonical: "https://www.lightning-revenue.com/amazon-startups",
     ogType: "website",
   };
 

@@ -1,5 +1,5 @@
-import React, { lazy, Suspense } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './components/regular/ScrollToTop';
 import CookieConsent from './components/regular/CookieConsent';
 import Home from './pages/Home';
@@ -51,48 +51,44 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <Suspense fallback={<Loading />}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<Blog />}>
-            <Route path=":slug" element={<BlogPostPage />} />
-          </Route>
-          <Route path="/despre-noi" element={<DespreNoi />} />
-          <Route path="/servicii" element={<Servicii />} />
-          <Route path="/dezvoltare-web" element={<DezvoltareWeb />} />
-          <Route path="/optimizare-seo" element={<OptimizareSEO />} />
-          <Route path="/marketing-digital" element={<MarketingDigital />} />
-          <Route path="/social-media" element={<SocialMedia />} />
-          <Route path="/branding" element={<Branding />} />
-          <Route path="/hosting-security" element={<HostingSecurity />} />
-          <Route path="/ecommerce" element={<Ecommerce />} />
-          <Route path="/cariere" element={<Cariere />} />
-          <Route path="/programari" element={<Booking />} />
-          <Route path="/portofoliu" element={<Portfolio />} />
-          <Route path="/ebook-digitalizare" element={<EbookDownload />} />
-          <Route path="/parteneri" element={<Partners />} />
-          <Route path="/crm-waitlist" element={<CRMWaitlist />} />
-          <Route path="/sales-intelligence" element={<Waitlist />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/crm" element={<CRM />} />
-          <Route path="/google-startups" element={<GoogleStartups />} />
-          <Route path="/microsoft-startups" element={<MicrosoftStartups />} />
-          <Route path="/amazon-startups" element={<AmazonStartups />} />
-          <Route path="/mongodb-startups" element={<MongoDBStartups />} />
-          <Route path="/hubspot-startups" element={<HubSpotStartups />} />
-          <Route path="/intercom-startups" element={<IntercomStartups />} />
-          <Route path="/stripe-startups" element={<StripeStartups />} />
-          <Route path="/finantare-startup" element={<FinantareStartup />} />
-          <Route path="/inscriere-startup-finantare" element={<StartupFinantareForm />} />
-          <Route path="/politica-cookie" element={<CookiePolicy />} />
-          <Route path="/termeni-si-conditii" element={<TermeniSiConditii />} />
-          <Route path="/politica-confidentialitate" element={<PoliticaConfidentialitate />} />
-          <Route path="/dashboard/email" element={<SendGridDashboard />} />
-          <Route path="/oferta-limitata" element={<LimitedOffer />} />
-          <Route path="*" element={<NotFound />} />
-          <Route path="/404" element={<NotFound />} />
-        </Routes>
-      </Suspense>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog/*" element={<Blog />} />
+        <Route path="/despre-noi" element={<DespreNoi />} />
+        <Route path="/servicii" element={<Servicii />} />
+        <Route path="/dezvoltare-web" element={<DezvoltareWeb />} />
+        <Route path="/optimizare-seo" element={<OptimizareSEO />} />
+        <Route path="/marketing-digital" element={<MarketingDigital />} />
+        <Route path="/social-media" element={<SocialMedia />} />
+        <Route path="/branding" element={<Branding />} />
+        <Route path="/hosting-security" element={<HostingSecurity />} />
+        <Route path="/ecommerce" element={<Ecommerce />} />
+        <Route path="/cariere" element={<Cariere />} />
+        <Route path="/programari" element={<Booking />} />
+        <Route path="/portofoliu" element={<Portfolio />} />
+        <Route path="/ebook-digitalizare" element={<EbookDownload />} />
+        <Route path="/parteneri" element={<Partners />} />
+        <Route path="/crm-waitlist" element={<CRMWaitlist />} />
+        <Route path="/sales-intelligence" element={<Waitlist />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/crm" element={<CRM />} />
+        <Route path="/google-startups" element={<GoogleStartups />} />
+        <Route path="/microsoft-startups" element={<MicrosoftStartups />} />
+        <Route path="/amazon-startups" element={<AmazonStartups />} />
+        <Route path="/mongodb-startups" element={<MongoDBStartups />} />
+        <Route path="/hubspot-startups" element={<HubSpotStartups />} />
+        <Route path="/intercom-startups" element={<IntercomStartups />} />
+        <Route path="/stripe-startups" element={<StripeStartups />} />
+        <Route path="/finantare-startup" element={<FinantareStartup />} />
+        <Route path="/inscriere-startup-finantare" element={<StartupFinantareForm />} />
+        <Route path="/politica-cookie" element={<CookiePolicy />} />
+        <Route path="/termeni-si-conditii" element={<TermeniSiConditii />} />
+        <Route path="/politica-confidentialitate" element={<PoliticaConfidentialitate />} />
+        <Route path="/dashboard/email" element={<SendGridDashboard />} />
+        <Route path="/oferta-limitata" element={<LimitedOffer />} />
+        <Route path="*" element={<NotFound />} />
+        <Route path="/404" element={<NotFound />} />
+      </Routes>
       <CookieConsent />
     </BrowserRouter>
   );

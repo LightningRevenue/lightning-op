@@ -6,7 +6,6 @@ import SEO from '../components/seo/SEO';
 import BlogSchema from './BlogSchema';
 import calculateReadingTime from '../utils/readingTime';
 import NewsletterSubscribe from './NewsletterSubscribe';
-import FloatingShareButtons from './FloatingShareButtons';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { tomorrow } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -109,8 +108,6 @@ const BlogPost = ({ posts }) => {
         />
       </div>
 
-      <FloatingShareButtons url={shareUrl} title={post.title} />
-
       <motion.article 
         ref={articleRef}
         initial={{ opacity: 0 }}
@@ -118,6 +115,19 @@ const BlogPost = ({ posts }) => {
         transition={{ duration: 0.5 }}
         className="max-w-4xl mx-auto px-4 py-12"
       >
+        {/* WhatsApp CTA Button */}
+        <div className="fixed bottom-6 right-6 z-50">
+          <a
+            href="https://wa.me/40743959914"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-6 py-3 bg-green-500 text-white rounded-full shadow-lg hover:shadow-xl hover:bg-green-600 transition-all"
+          >
+            <FaWhatsapp className="text-xl" />
+            <span className="font-medium">Consultanță Gratuită</span>
+          </a>
+        </div>
+
         <SEO 
           title={post.title}
           description={post.excerpt}
