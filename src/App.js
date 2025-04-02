@@ -38,6 +38,7 @@ import CookiePolicy from './pages/CookiePolicy';
 import TermeniSiConditii from './pages/TermeniSiConditii';
 import PoliticaConfidentialitate from './pages/PoliticaConfidentialitate';
 import SendGridDashboard from './pages/SendGridDashboard';
+import LimitedOffer from './pages/LimitedOffer';
 
 // Loading component
 const Loading = () => (
@@ -87,6 +88,7 @@ function App() {
           <Route path="/termeni-si-conditii" element={<TermeniSiConditii />} />
           <Route path="/politica-confidentialitate" element={<PoliticaConfidentialitate />} />
           <Route path="/dashboard/email" element={<SendGridDashboard />} />
+          <Route path="/oferta-limitata" element={<LimitedOffer />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/404" element={<NotFound />} />
         </Routes>
