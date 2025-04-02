@@ -157,7 +157,7 @@ const StartupPanel = () => {
         <div className="block md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-lg border border-gray-200"
+            className="fixed bottom-20 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-lg border border-gray-200"
           >
             <span className="text-sm font-medium">Programe Startup</span>
             <FaChevronUp className={`transition-transform ${isOpen ? 'rotate-180' : ''}`} />

@@ -14,6 +14,7 @@ import Rezultate from '../components/home/Rezultate';
 import RecentBlogPosts from '../components/home/RecentBlogPosts';
 import Contact from '../components/home/Contact';
 import StartupPanel from '../components/home/StartupPanel';
+import LimitedOfferBubble from '../components/regular/LimitedOfferBubble';
 
 const Home = () => {
 
@@ -137,6 +138,7 @@ const Home = () => {
       </script>
 
       <Header />
+      <LimitedOfferBubble />
       
       <main>
         <StartupPanel />
